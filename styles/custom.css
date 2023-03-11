@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Outfit', sans-serif !important;
+  overflow-x: hidden;
+}
+
+.nav {
+  width: 100vw;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+.nav .menu .menu-item {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+}
+.nav .menu .menu-item:hover {
+  opacity: 1;
+}
+.nav .btn-talk .icon {
+  transform: scale(0.7) translate(5px,-2px);
+  transition: all 0.3s ease-in-out;
+}
+.nav .btn-talk:hover .icon {
+  transform: scale(0.7) translate(10px,-2px);
+}
+
+.hero-section {
+  background-color:hsla(212,26%,11%,1);
+  background-image:
+  radial-gradient(at 0% 0%, hsla(0,0%,100%,0.09) 0px, transparent 50%),
+  radial-gradient(at 64% 68%, hsla(0,0%,100%,0.05) 0px, transparent 50%);
+  position: relative;
+}
+.hero-section h1 {
+  font-size: 55px;
+}
+.hero-section .social-section {
+  position: absolute;
+  right: 60px;
+  bottom: 40px;
+  z-index: 2;
+}
+.hero-section .social-section .icon {
+  color: white;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+}
+.hero-section .social-section .icon:hover {
+  opacity: 1;
+}
+.hero-section .btn-scroll {
+  position: absolute;
+  left: 60px;
+  bottom: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  color: black;
+  background-color: #828282;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.hero-section .btn-scroll:hover {
+  background-color: white;
+}
+
+.gradient-text {
+	color: #c7d63c;
+	background-image: linear-gradient(90deg, #6e40aa, #963db3, #bf3caf, #e3419e, #fe4b83, #ff5e64, #ff7747, #fb9633, #e2b72f, #c7d63c, #c7d63c);
+	background-position: 100% 0;
+	background-size: 500% 100%;
+	transition: background-position 1s linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.animated {
+	animation: 3s linear 0s infinite alternate both running textGradient;
+}
+.transitioned:hover {
+	background-position: 0 0;
+}
+@keyframes textGradient {
+	from {
+		background-position: 100% 0;
+	}
+	to {
+		background-position: 0% 0;
+	}
+}
