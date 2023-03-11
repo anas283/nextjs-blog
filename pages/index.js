@@ -152,28 +152,28 @@ export default function Home() {
           My Stack
         </h1>
         <div className='mt-5 row'>
-          <div class="col-3 col-lg my-3">
+          <div className="col-3 col-lg my-3">
             <Image className='logo' src={Angular} />
           </div>
-          <div class="col-3 col-lg my-3">
+          <div className="col-3 col-lg my-3">
             <Image className='logo' src={ReactJS} />
           </div>
-          <div class="col-3 col-lg my-3">
+          <div className="col-3 col-lg my-3">
             <Image className='logo' src={NextJS} />
           </div>
-          <div class="col-3 col-lg my-3">
+          <div className="col-3 col-lg my-3">
             <Image className='logo' src={Javascript} />
           </div>
-          <div class="col-3 col-lg my-3">
+          <div className="col-3 col-lg my-3">
             <Image className='logo' src={HTML} />
           </div>
-          <div class="col-3 col-lg my-3">
+          <div className="col-3 col-lg my-3">
             <Image className='logo' src={Bootstrap} />
           </div>
-          <div class="col-3 col-lg my-3">
+          <div className="col-3 col-lg my-3">
             <Image className='logo' src={CSS} />
           </div>
-          <div class="col-3 col-lg my-3">
+          <div className="col-3 col-lg my-3">
             <Image className='logo' src={SCSS} />
           </div>
         </div>
