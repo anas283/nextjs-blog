@@ -13,8 +13,11 @@ import HTML from '../public/html.png';
 import Bootstrap from '../public/bootstrap.png';
 import CSS from '../public/css.png';
 import SCSS from '../public/scss.png';
+import { useState } from 'react';
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
       <Head>
@@ -38,42 +41,64 @@ export default function Home() {
               </a>
             </div>
           </div>
+          <button className='btn menu-btn' onClick={() => setIsOpen(!isOpen)}>
+            <FeatherIcon icon="menu" color="white" size={30} />
+          </button>
+          <div
+            className={isOpen ? 'side-menu side-menu-open p-3 shadow-sm':'side-menu p-3 shadow-sm'}
+          >
+            <button className='btn close-btn' onClick={() => setIsOpen(!isOpen)}>
+              <FeatherIcon icon="x" size={30} />
+            </button>
+            <div className='min-vh-100 d-flex justify-content-center align-items-center'>
+              <div className="d-flex flex-column">
+                <a href="#portfolio" className="menu-mobile" onClick={() =>setIsOpen(!isOpen)}>Portfolio</a>
+                <a href="#about" className="menu-mobile" onClick={() =>setIsOpen(!isOpen)}>About Me</a>
+                <a href="#stack" className="menu-mobile" onClick={() =>setIsOpen(!isOpen)}>My Stack</a>
+                <a href='mailto:muhammadanasbinadam@gmail.com' className="menu-mobile btn-talk" onClick={() =>setIsOpen(!isOpen)}>
+                  Let's Talk
+                  <FeatherIcon icon="arrow-right" className="icon" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
 
       <main className='hero-section'>
-        <div className='container d-flex justify-content-center align-items-center vh-100'>
+        <div className='container d-flex justify-content-center align-items-center vh-100'
+          style={{ position: 'relative' }}
+        >
           <div>
             <h3 className='text-center text-secondary'>Hola 👋🏻 I'm Anas</h3>
             <h1 className="section-title col-12 col-lg-12 mx-auto text-center text-white">
-              {/* Frontend Developer  */}
               <span className='gradient-text animated'>Frontend Developer</span> <br/>
               based in Malaysia
             </h1>
           </div>
-        </div>
-        <a href='#portfolio' className='btn-scroll'>
-          <FeatherIcon icon="arrow-down" className="icon" />
-        </a>
-        <div className='social-section d-flex flex-column'>
-          <Link
-            href="https://github.com/anas283"
-            target="_blank"
-          >
-            <FeatherIcon icon="github" className="icon mt-3" />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/anas283/"
-            target="_blank"
-          >
-            <FeatherIcon icon="linkedin" className="icon mt-3" />
-          </Link>
-          <Link
-            href="https://twitter.com/whoishodor"
-            target="_blank"
-          >
-            <FeatherIcon icon="twitter" className="icon mt-3" />
-          </Link>
+          <a href='#portfolio' className='btn-scroll'>
+            <FeatherIcon icon="arrow-down" className="icon" />
+          </a>
+          <div className='social-section d-flex flex-column'>
+            <Link
+              href="https://github.com/anas283"
+              target="_blank"
+            >
+              <FeatherIcon icon="github" className="icon mt-3" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/anas283/"
+              target="_blank"
+            >
+              <FeatherIcon icon="linkedin" className="icon mt-3" />
+            </Link>
+            <Link
+              href="https://twitter.com/whoishodor"
+              target="_blank"
+            >
+              <FeatherIcon icon="twitter" className="icon mt-3" />
+            </Link>
+          </div>
         </div>
       </main>
 
@@ -101,13 +126,13 @@ export default function Home() {
               <h3>Kad Digital</h3>
               <h6 className='date text-secondary'>11 March 2023</h6>
               <div>
-                <span class="badge rounded-pill bg-light me-2">Next.js</span>
-                <span class="badge rounded-pill bg-light me-2">Node.js</span>
-                <span class="badge rounded-pill bg-light me-2">MySQL</span>
-                <span class="badge rounded-pill bg-light me-2">Bootstrap</span>
-                <span class="badge rounded-pill bg-light me-2">Ant Design</span>
+                <span class="badge rounded-pill bg-light me-2 mb-2">Next.js</span>
+                <span class="badge rounded-pill bg-light me-2 mb-2">Node.js</span>
+                <span class="badge rounded-pill bg-light me-2 mb-2">MySQL</span>
+                <span class="badge rounded-pill bg-light me-2 mb-2">Bootstrap</span>
+                <span class="badge rounded-pill bg-light me-2 mb-2">Ant Design</span>
               </div>
-              <h6 className='text-secondary mt-3'>A website that I built for people to create beautiful wedding cards that ensure their guests don't miss out on the special event.</h6>
+              <h6 className='text-secondary mt-2'>A website that I built for people to create beautiful wedding cards that ensure their guests don't miss out on the special event.</h6>
               <Link 
                 href="https://www.kad-digital.com/"  
                 target="_blank"
@@ -205,10 +230,10 @@ export default function Home() {
             </h1>
           </a>
           <div className='row mt-5'>
-            <div className='col-12 col-lg-8'>
+            <div className='order-2 order-md-1 col-12 col-lg-8 author'>
               Muhammad Anas | 2023
             </div>
-            <div className='col-12 col-lg-4'>
+            <div className='order-1 order-md-2 col-12 col-lg-4'>
               <div className='d-flex justify-content-between'>
                 <Link
                   href="https://github.com/anas283"

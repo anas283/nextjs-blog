@@ -44,7 +44,7 @@ body {
 }
 .hero-section .social-section {
   position: absolute;
-  right: 60px;
+  right: 10px;
   bottom: 40px;
   z-index: 2;
 }
@@ -59,7 +59,7 @@ body {
 }
 .hero-section .btn-scroll {
   position: absolute;
-  left: 60px;
+  left: 10px;
   bottom: 40px;
   width: 60px;
   height: 60px;
@@ -152,6 +152,8 @@ body {
 .stack-section .logo {
   height: 50px;
   width: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 footer {
@@ -176,4 +178,73 @@ footer .link:hover {
 }
 .text-underline {
   text-decoration: underline;
+}
+
+.menu-btn {
+  display: none !important;
+}
+.side-menu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: white;
+  z-index: 5;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav .menu {
+    display: none !important;
+  }
+  .menu-btn {
+    display: block !important;
+  }
+  .side-menu-open {
+    right: 0;
+    opacity: 1;
+  }
+  .side-menu .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+  }
+  .side-menu {
+    color: black;
+  }
+  .side-menu .menu-mobile {
+    font-size: 26px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .hero-section h1 {
+    font-size: 45px;
+  }
+  .hero-section .social-section {
+    right: 20px;
+  }
+  .hero-section .btn-scroll {
+    left: 20px;
+  }
+
+  .stack-section .logo {
+    height: 40px;
+  }
+
+  footer .email h1 {
+    font-size: 18px;
+  }
+  footer .author {
+    margin-top: 20px;
+  }
+
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
