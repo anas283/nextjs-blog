@@ -221,13 +221,11 @@ export default function Home() {
 
       <footer>
         <div className='container py-5'>
-          <h1>Have a cool project idea?</h1>
+          <h1>Contact me</h1>
           <a href="mailto:muhammadanasbinadam@gmail.com" className='email'>
             <h1>
               <span className='text-underline'>muhammadanasbinadam@gmail.com</span> 
               <FeatherIcon icon="arrow-right" className="ms-2" size={30}  />
-              <br />
-              for collaborations.
             </h1>
           </a>
           <div className='row mt-5'>
