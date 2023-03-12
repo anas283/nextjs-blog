@@ -27,9 +27,10 @@ export default function Home() {
 
       <nav className='nav text-white'>
         <div className='container d-flex justify-content-between'>
-          <div>
-            Anas
-          </div>
+          <Link href="/" className='d-flex flex-row logo'>
+            <FeatherIcon icon="code" />
+            <div className='ms-2'>Anas</div>
+          </Link>
           <div>
             <div className="menu d-flex flex-row">
               <a href='#portfolio' className="menu-item ms-5">Portfolio</a>

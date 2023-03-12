@@ -31,6 +31,11 @@ body {
 .nav .btn-talk:hover .icon {
   transform: scale(0.7) translate(10px,-2px);
 }
+.nav .logo {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
 
 .hero-section {
   background-color:hsla(212,26%,11%,1);
@@ -199,6 +204,9 @@ footer .link:hover {
   .nav .menu {
     display: none !important;
   }
+  .nav .logo {
+    margin-top: 10px;
+  }  
   .menu-btn {
     display: block !important;
   }
