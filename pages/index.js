@@ -127,11 +127,11 @@ export default function Home() {
               <h3>Kad Digital</h3>
               <h6 className='date text-secondary'>11 March 2023</h6>
               <div>
-                <span class="badge rounded-pill bg-light me-2 mb-2">Next.js</span>
-                <span class="badge rounded-pill bg-light me-2 mb-2">Node.js</span>
-                <span class="badge rounded-pill bg-light me-2 mb-2">MySQL</span>
-                <span class="badge rounded-pill bg-light me-2 mb-2">Bootstrap</span>
-                <span class="badge rounded-pill bg-light me-2 mb-2">Ant Design</span>
+                <span className="badge rounded-pill bg-light me-2 mb-2">Next.js</span>
+                <span className="badge rounded-pill bg-light me-2 mb-2">Node.js</span>
+                <span className="badge rounded-pill bg-light me-2 mb-2">MySQL</span>
+                <span className="badge rounded-pill bg-light me-2 mb-2">Bootstrap</span>
+                <span className="badge rounded-pill bg-light me-2 mb-2">Ant Design</span>
               </div>
               <h6 className='text-secondary mt-2'>A website that I built for people to create beautiful wedding cards that ensure their guests don't miss out on the special event.</h6>
               <Link 
