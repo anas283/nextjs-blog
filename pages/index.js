@@ -99,9 +99,15 @@ export default function Home() {
           <div className='col-12 col-lg-6 d-flex align-items-center'>
             <div className='py-3 col-12 col-lg-11 mx-auto'>
               <h3>Kad Digital</h3>
-              <h6 className='text-secondary'>A website that I built for people to create beautiful wedding cards that ensure their guests don't miss out on the special event.</h6>
-              <h6 className='text-secondary'>11 March 2023</h6>
-              <h6 className='text-secondary'>Next.js, Bootstrap, Ant Design</h6>
+              <h6 className='date text-secondary'>11 March 2023</h6>
+              <div>
+                <span class="badge rounded-pill bg-light me-2">Next.js</span>
+                <span class="badge rounded-pill bg-light me-2">Node.js</span>
+                <span class="badge rounded-pill bg-light me-2">MySQL</span>
+                <span class="badge rounded-pill bg-light me-2">Bootstrap</span>
+                <span class="badge rounded-pill bg-light me-2">Ant Design</span>
+              </div>
+              <h6 className='text-secondary mt-3'>A website that I built for people to create beautiful wedding cards that ensure their guests don't miss out on the special event.</h6>
               <Link 
                 href="https://www.kad-digital.com/"  
                 target="_blank"
@@ -134,6 +140,14 @@ export default function Home() {
                   I believe that a great user interface should not only be functional, 
                   but also visually appealing and easy to use.
                 </h6>
+                <a 
+                  href="/Resume-Muhammad-Anas.pdf"
+                  target="_blank"
+                  className='btn btn-link px-0 mt-3 text-dark'
+                >
+                  See my resume
+                  <FeatherIcon icon="external-link" size={20} className="ms-2 mb-1" />
+                </a>
               </div>
             </div>
             <div className="col-12 col-lg-6">
@@ -181,9 +195,45 @@ export default function Home() {
 
       <footer>
         <div className='container py-5'>
-          <h6 className='text-center'>
-            Built with Next.js
-          </h6>
+          <h1>Have a cool project idea?</h1>
+          <a href="mailto:muhammadanasbinadam@gmail.com" className='email'>
+            <h1>
+              <span className='text-underline'>muhammadanasbinadam@gmail.com</span> 
+              <FeatherIcon icon="arrow-right" className="ms-2" size={30}  />
+              <br />
+              for collaborations.
+            </h1>
+          </a>
+          <div className='row mt-5'>
+            <div className='col-12 col-lg-8'>
+              Muhammad Anas | 2023
+            </div>
+            <div className='col-12 col-lg-4'>
+              <div className='d-flex justify-content-between'>
+                <Link
+                  href="https://github.com/anas283"
+                  target="_blank"
+                  className='link'
+                >
+                  GitHub
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/anas283/"
+                  target="_blank"
+                  className='link'
+                >
+                  LinkedIn
+                </Link>
+                <Link
+                  href="https://twitter.com/whoishodor"
+                  target="_blank"
+                  className='link'
+                >
+                  Twitter
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
